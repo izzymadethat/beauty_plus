@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap");
+
 html,
 body,
 h1,
@@ -7,6 +9,7 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "MuseoModerno", sans-serif;
 }
 
 body {
@@ -103,14 +106,27 @@ button {
 
 /* Hero Section */
 .hero-container {
+  position: relative;
   width: 100vw;
   max-height: 100vh;
   height: 80vh;
-  background-color: black;
   color: #fff;
   display: flex;
   flex-direction: row;
   align-items: center;
+  background: url("/assets/header-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+  z-index: 1; /* Place the pseudo-element behind the content */
 }
 
 .hero-ring-light {
@@ -132,6 +148,7 @@ button {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+  z-index: 50;
 }
 
 .hero-ring-light:hover {
@@ -169,15 +186,18 @@ button {
 
 .hero-title {
   width: 60%;
+  z-index: 50;
 }
 
 .hero-title .title {
   font-size: 3rem;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 .hero-title .hero-subtitle {
   font-size: 2rem;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 .hero-title .hero-text {
   font-size: 16px;
