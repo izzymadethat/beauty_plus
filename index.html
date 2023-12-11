@@ -4,19 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Beauty Plus | Sample Beauty Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <title>PLETHORA | Ultra Beautiful Website</title>
   </head>
   <body>
     <header class="header">
       <div class="topsection-container">
-        <a href="#"><img src="#" alt="main logo" class="logo" /></a>
+        <a href="#" id="logo-text">PLETHORA</a>
         <div class="search-container">
-          <button type="submit">search</button>
-          <input type="text" name="searchBar" id="searchBar" />
+          <!-- <img src="./assets/search.svg" alt="search icon" /> -->
+          <i class="bi bi-search"></i>
+          <input
+            type="search"
+            autocomplete="off"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Search..."
+          />
         </div>
-        <i class="chat-icon"></i>
-        <i class="favorites-heart"></i>
-        <i class="cart-checkout"></i>
+        <div class="header-icons">
+          <a href="#"><i class="bi bi-chat"></i></a>
+          <a href="#"><i class="bi bi-heart"></i></a>
+          <a href="#"><i class="bi bi-bag"></i></a>
+        </div>
       </div>
       <nav id="topNav">
         <button class="nav-menu-item">
