@@ -1,0 +1,1 @@
+# Sample Beauty Site Design
