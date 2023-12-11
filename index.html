@@ -67,15 +67,28 @@
 
     <main>
       <div class="hero-container">
-        <div class="hero-ring-light"></div>
-        <h2 class="hero-title">Tons of Makeup...</h2>
-        <h3 class="hero-title hero-subtitle">Tons of deals</h3>
-        <p class="hero-title hero-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor qui
-          vitae tempora nisi praesentium illum mollitia voluptatem distinctio
-          facere maiores minima deserunt expedita, dolorum earum!
-        </p>
-        <button class="hero-button button">Find your Pallette</button>
+        <div
+          class="hero-ring-light"
+          onmouseover="revealProducts()"
+          onmouseout="concealProducts()"
+        >
+          <img
+            src="/assets/womanToReveal.jpg"
+            alt="hero image of woman in makeup"
+          />
+        </div>
+        <div class="hero-title">
+          <h2 class="hero-title title">Dive into a <br />World of Glamour</h2>
+          <h3 class="hero-title hero-subtitle">
+            Tons of deals and a ton of products
+          </h3>
+          <p class="hero-title hero-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor qui
+            vitae tempora nisi praesentium illum mollitia voluptatem distinctio
+            facere maiores minima deserunt expedita, dolorum earum!
+          </p>
+          <button class="hero-button button">Find your Pallette</button>
+        </div>
       </div>
     </main>
     <script src="index.js"></script>
